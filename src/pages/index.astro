@@ -1,5 +1,9 @@
 ---
+import "../styles/styles.css";
+import "../styles/tokens.css";
 import Card from "../components/Card.astro";
+import Nav from "../components/Nav.astro";
+import Header from "../components/Header.astro";
 ---
 
 <html lang="en">
@@ -12,12 +16,31 @@ import Card from "../components/Card.astro";
     <title>Astro</title>
   </head>
   <body>
-    <h1>Astro</h1>
+    <Header />
+
     <main>
-      <Card />
-      <Card />
-      <Card />
-      <Card />
+      <Nav />
+
+      <section>
+        <h2>Fokus</h2>
+        <section class="cards">
+          <Card header="Peaceful piano" text="lorem ipsum">
+            <img src="/spotify_images/peaceful_piano.jpeg" alt="cover" />
+          </Card>
+          <Card header="Deep focus" text="lorem ipsum">
+            <img src="/spotify_images/deep_focus.jpeg" alt="cover" />
+          </Card>
+          <Card header="Peaceful piano" text="lorem ipsum">
+            <img src="/spotify_images/instrumental_study.jpeg" alt="cover" />
+          </Card>
+          <Card header="Focus flow" text="lorem ipsum">
+            <img src="/spotify_images/focus_flow.jpeg" alt="cover" />
+          </Card>
+          <Card header="Workday Lounge" text="lorem ipsum">
+            <img src="/spotify_images/reading_adventure.jpeg" alt="cover" />
+          </Card>
+        </section>
+      </section>
     </main>
   </body>
 </html>

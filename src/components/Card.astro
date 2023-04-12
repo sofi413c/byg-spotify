@@ -1,10 +1,16 @@
 ---
+// const header = Astro.props.header;
+// const text = Astro.props.text;
+
+const { header, text, btn, img } = Astro.props; //blot en anden måde at skrive ovenstående på
 ---
 
-<article>
-  <img src="" alt="" />
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A dolore quos voluptas sit itaque cum, animi enim magnam culpa earum, voluptates accusantium deserunt odit aliquid. Assumenda voluptate eos totam repellat.</p>
-  <button>klik her</button>
+<article class="card-border">
+  <slot/>
+  <h3>{header}</h3>
+  <p>{text}</p>
 </article>
 
-<style></style>
+<style>
+
+</style>
