@@ -2,7 +2,7 @@
 // const header = Astro.props.header;
 // const text = Astro.props.text;
 
-const { header, text, btn, img } = Astro.props; //blot en anden måde at skrive ovenstående på
+const { header, text, btn, img } = Astro.props; //blot en anden måde at skrive ovenstående på, gør at du kan udskifte tekst og stadig beholde komponentens skabelon.
 ---
 
 <article class="card-border">
@@ -11,6 +11,6 @@ const { header, text, btn, img } = Astro.props; //blot en anden måde at skrive 
   <p>{text}</p>
 </article>
 
-<style>
-
-</style>
+<!-- <style> 
+style scope er en måde at style card.astro på isoleret, uden at gøre det i et stort stylesheet.
+</style> -->
